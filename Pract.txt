@@ -1,0 +1,86 @@
+Integer num1 = 10;
+        String operator = '+';
+        Integer num2 = 5;
+
+        Decimal result = 0;
+
+        if (operator == '+') {
+            result = num1 + num2;
+        } else if (operator == '-') {
+            result = num1 - num2;
+        } else if (operator == '*') {
+            result = num1 * num2;
+        } else if (operator == '/') {
+            if (num2 != 0) {
+                result = (Decimal) num1 / num2;
+            } else {
+                System.debug('Cannot divide by zero');
+                return;
+            }
+        } else {
+            System.debug('Invalid operator');
+            return;
+        }
+
+        System.debug('Result: ' + result);
+
+
+-----------------------------------------------
+
+
+Integer celsius = 25;
+        Integer fahrenheit = (celsius * 9/5) + 32;
+		System.debug('C --> F');
+        System.debug('Celsius: ' + celsius + '\u00B0C');
+        System.debug('Fahrenheit: ' + fahrenheit + '\u00B0F');
+
+        Integer fahrenheit2 = 77;
+        Integer celsius2 = (fahrenheit2 - 32) * 5/9;
+		System.debug('F --> C');
+        System.debug('Fahrenheit: ' + fahrenheit2 + '\u00B0F');
+        System.debug('Celsius: ' + celsius2 + '\u00B0C');
+---------------------------------------------------------------------
+
+
+Integer num = 12345;
+        Decimal decimalValue = Decimal.valueOf(num);
+      System.debug('Decimal representation of ' + num + ' is: ' + decimalValue.format());
+
+		 Decimal DNum =12.78;
+
+
+
+
+
+-----------------------------------------------------------
+
+
+String binaryNumber = '101'; // Your binary number here
+Integer decimalNumber = 0;
+Integer power = 0;
+
+for(Integer i = binaryNumber.length() - 1; i >= 0; i--){
+    if(binaryNumber.substring(i, i+1) == '1'){
+        decimalNumber += Integer.valueOf(Math.pow(2, power));
+    }
+    power++;
+}
+
+System.debug('Decimal equivalent: ' + decimalNumber);
+
+
+
+
+
+
+
+
+
+
+
+
+		 Integer INum =Integer.valueOf(DNum);
+		  System.debug('Integer representation of '+ DNUM + ' is: ' +INUM );
+
+-----------------------------------------------------------------
+
